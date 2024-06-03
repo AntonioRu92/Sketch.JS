@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/pen.svg">
+</head>
+
+<body id="body">
+    <div class="title">
+        <img src="https://raw.githubusercontent.com/left-no-crumbz/etch-a-sketch/7500fdaf5f56e28d30f8d53f7b2426aa2f76c947/img/pen.svg"
+            width="60px" height="auto" loading="lazy">
+        <h1>ETCH-A-SKETCH</h1>
+    </div>
+    <div class="container">
+        <!-- TODO:
+        - finish sidebar
+        -create range sliders
+        -polish the app -->
+        <div class="sidebar" id="sidebar">
+
+            <div class="input-container">
+                <input type="color" id="bg-clr-picker" value="#1e2124">
+                <label for="bg-clr-picker">Background Color</label>
+            </div>
+
+            <div class="input-container">
+                <input type="color" id="pen-clr-picker" value="#000000">
+                <label>Pen Color</label>
+            </div>
+
+
+            <button id="rainbow">Rainbow Mode</button>
+            <button id="shading">Shading Mode</button>
+            <button id="eraser">Eraser</button>
+            <button id="clear">Clear</button>
+
+            <!-- TODO ADD RANGE SLIDER -->
+            <label id="value" for="grid-size"></label>
+            <input type="range" id="grid-size" min="1" max="64" step="1" value="16">
+        </div>
+
+        <div class="grid-container" id="grid-container">
+            <!-- Append div here -->
+        </div>
+    </div>
+    <footer>Made with 💙 by <a href="https://github.com/left-no-crumbz" target="_blank">Crumbz</a></footer>
+
+</body>
+<script src="./script.js" defer></script>
+
+</html>
